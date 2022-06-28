@@ -69,6 +69,7 @@ class AppFixtures extends Fixture
 
             $manager->persist($author);
         }
+        
 
 
 
