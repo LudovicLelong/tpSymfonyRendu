@@ -62,6 +62,7 @@ class AppFixtures extends Fixture
 
 
 
+         
          // Author
          for ($i=0; $i <= 79; $i++) {
             $author = new Author();
@@ -70,7 +71,7 @@ class AppFixtures extends Fixture
             $manager->persist($author);
         }
 
-        
+
 
 
 
