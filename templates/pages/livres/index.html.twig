@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Livres{% endblock %}
+
+{% block body %}
+        <div class="container mt-3">
+
+            <h1>Les livres</h1>
+
+            <div class="count">
+            <p>Il y a  <small> {{ livres.getTotalItemCount }}</small> livres au total dans la bibliotheque Bibli, et heuresement qu'on en a pas plus, car mon ordi surchauffe déja</p>
+          
+        </div>
+
+
+
+        <table class="table table-hover mt-3">
+  <thead>
+    <tr>
+      <th scope="col">Numéro</th>
+      <th scope="col">Nom</th>
+      <th scope="col">Description</th>
+      <th scope="col">Prix</th>
+      <th scope="col">Date de création</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for livre in livres %}
+            <tr class="table-primary">
+      <th scope="row">{{livre.id}}</th>
+      <td>{{livre.name}}</td>
+      <td>{{livre.description}}</td>
+      <td>{{livre.price}}</td>
+      <td>{{livre.datecraft|date("d/m/Y")}}</td>
+    </tr>
+        {% endfor %}
+    
+  </tbody>
+</table>
+
+<div class="navigation mt-4">
+    {{ knp_pagination_render(livres) }}
+</div>
+
+    </div>
+{% endblock %}

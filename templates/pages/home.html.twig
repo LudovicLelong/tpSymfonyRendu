@@ -1,0 +1,43 @@
+{% extends "base.html.twig" %}
+
+{% block title %} Bibliothèque - Accueil {% endblock %}
+
+
+
+
+
+{% block body %}
+        <div> 
+            <div class="jumbotron">
+            <h1 class="display-4">Bienvenu dans la Bibliothèque Bibli</h1>
+            <p class="lead">Vous êtes dans le paradis du livre, un livre par là, un livre par ici, un livre pour tous le monde</p>
+            <hr class="my-4">
+            <p>Pour en savoir plus, cliquez ici sur le boutton pour vous connecter</p>
+            <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/inscription" role="button">Inscription</a>
+            </p>
+        </div>
+    </div>
+
+    <h1>A savoir</h1> 
+
+    <div class="alert alert-dismissible alert-warning mt-4 container">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <h4 class="alert-heading">Vous allez aimer!</h4>
+        <p class="mb-0">Pour accéder a l'univers des livres cliquer sur<a href="/livres" class="alert-link"> ce lien qui vous redirigera</a>.</p>
+    
+      <img src="https://s2.qwant.com/thumbr/474x265/e/c/823de4a2b8f3c1cca7fa321c501000f0eac214909fc0d31dbb7a21e0ffadb5/th.jpg?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.qQTKfUHZ9WSUBAqPd0vajQHaEJ%26pid%3DApi&q=0&b=1&p=0&a=0" class="img-fluid" alt="Responsive image">
+
+    </div>
+
+    <div class="card mt-5">
+        <div class="card-header">
+          Pied-de-page
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Nous espérons que vous aimez la bibliothèque</h5>
+          <p class="card-text">Envie d'une bibliothèque murale ou vous préférez mélanger vos photos de famille avec vos livres ? Quoi qu'il en soit, nos bibliothèques multi-tâches sont idéales pour tout ce que vous aimez avoir à portée de main. Vous recherchez une bibliothèque blanche ou en chêne ? Nous avons des styles et des tailles pour tous les goûts.</p>
+        </div>
+      </div>
+{% endblock %}
+
